@@ -16,6 +16,7 @@ Read data files from: /usr/share/nmap
 ```
 
 After looking at the port 23 it was only asking for a password
+
 ![image](https://github.com/user-attachments/assets/7bd47c37-822c-49b2-bb08-890246fd9db3)
 
 
