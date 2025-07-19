@@ -24,11 +24,11 @@ Whether you're a beginner looking to understand the basics or a seasoned hacker 
 
 ### 🐧 Linux Machines
 
-- [Antique](./Linux/Antique.md)
+- [Antique](./Antique.md)
 
 ### 🪟 Windows Machines
 
-- [Forest](./Windows/Forest.md)
+- [Forest](./Forest.md)
 
 ---
 
