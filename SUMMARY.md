@@ -7,6 +7,6 @@
   - [Knife](Knife.md)
   - [Trick](Trick.md)
 - [Linux]
-  - [Active](Active.pdf)
-  - [Boardlight](Boardlight.pdf)
-  - [Cicada](Cicada.pdf)
+  - [Active](Active.md)
+  - [Boardlight](Boardlight.md)
+  - [Cicada](Cicada.md)
