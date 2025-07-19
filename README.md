@@ -35,7 +35,7 @@ Whether you're a beginner looking to understand the basics or a seasoned hacker 
 ## 🚀 Quick Links
 
 - 🌐 [TryHackMe Profile](https://tryhackme.com/p/xdaemon)
-- 🧠 [Hack The Box Profile](https://app.hackthebox.com/profile/2019421)
+- 🧠 [Hack The Box Profile](https://app.hackthebox.com/users/2019421)
 - 📄 [LinkedIn](https://linkedin.com/in/dilipk5)
 - 🛠️ Tools: [`Tools.md`](./Tools.md) *(Coming soon)*
 
