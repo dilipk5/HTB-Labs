@@ -5,6 +5,7 @@
   - [Forest](Forest.md)
   - [Cicada](Cicada.md)
   - [Active](Active.md)
+  - [Sauna](Sauna.md)
   
 - [Linux]
   - [Boardlight](Boardlight.md)
