@@ -15,3 +15,7 @@
     - [Antique](Antique.md)
     - [Knife](Knife.md)
     - [Trick](Trick.md)
+- [Challenges]
+  - [Web]
+  - [Reversing]
+  - [Pwning]
