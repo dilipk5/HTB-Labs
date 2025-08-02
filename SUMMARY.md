@@ -8,6 +8,7 @@
     - [Active](Active.md)
     - [Sauna](Sauna.md)
     - [Return](Return.md)
+    - [Timelapse](Timelapse.md)
   
 - [Linux]
   - [Easy]
