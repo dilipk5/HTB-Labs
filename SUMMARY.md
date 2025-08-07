@@ -9,6 +9,8 @@
     - [Sauna](Sauna.md)
     - [Return](Return.md)
     - [Timelapse](Timelapse.md)
+  - [Medium]
+    - [Resolute](Resolute.md)
   
 - [Linux]
   - [Easy]
