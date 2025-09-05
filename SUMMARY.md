@@ -9,6 +9,7 @@
     - [Sauna](Sauna.md)
     - [Return](Return.md)
     - [Timelapse](Timelapse.md)
+    - [Nest](Nest.md)
   - [Medium]
     - [Resolute](Resolute.md)
   
