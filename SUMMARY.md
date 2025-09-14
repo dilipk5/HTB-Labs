@@ -1,20 +1,6 @@
 # Summary
 
 - [Home](README.md)
-- [HTB-Machnies]
-  - [Forest](Forest.md)
-  - [Cicada](Cicada.md)
-  - [Active](Active.md)
-  - [Sauna](Sauna.md)
-  - [Return](Return.md)
-  - [Timelapse](Timelapse.md)
-  - [Nest](Nest.md)
-  - [Resolute](Resolute.md)
-  - [Boardlight](Boardlight.md)
-  - [Antique](Antique.md)
-  - [Knife](Knife.md)
-  - [Trick](Trick.md)
-  - [Intelligence](Intelligence.md)
 - [Windows]
   - [Easy]
     - [Forest](Forest.md)
