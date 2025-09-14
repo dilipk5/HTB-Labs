@@ -14,6 +14,7 @@
   - [Antique](Antique.md)
   - [Knife](Knife.md)
   - [Trick](Trick.md)
+  - [Intelligence](Intelligence.md)
 - [Windows]
   - [Easy]
     - [Forest](Forest.md)
@@ -25,6 +26,7 @@
     - [Nest](Nest.md)
   - [Medium]
     - [Resolute](Resolute.md)
+    - [Intelligence](Intelligence.md)
   
 - [Linux]
   - [Easy]
