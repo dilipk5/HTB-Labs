@@ -24,6 +24,7 @@
     - [Antique](Antique.md)
     - [Knife](Knife.md)
     - [Trick](Trick.md)
+    - [Cap](Cap.md)
 - [Challenges]
   - [Web]
   - [Reversing]
